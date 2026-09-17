@@ -1,1 +1,1 @@
-﻿body { font-family: "Comic Sans MS", "Comic Sans", Arial, cursive; text-align: center; margin-top: 50px; } h1 { font-family: Papyrus, fantasy; color: purple; } li { display: inline-block; } a:hover { color: #aaa; } footer { background-color: #ddd; color: #555; }
+﻿body { font-family: "Comic Sans MS", "Comic Sans", Arial, cursive; text-align: center; margin-top: 50px; } h1 { font-family: Papyrus, fantasy; color: purple; } li { display: inline-block; padding: 0 10px; } a:hover { color: #aaa; } footer { background-color: #ddd; color: #555; padding: 10px; margin-top: 20px; }
