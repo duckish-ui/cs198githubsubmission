@@ -1,3 +1,6 @@
+/**
+ * Question 1: Interactive Sidebar
+ */
 const question1 = () => {
   const sidebarButton = document.getElementById("sidebar-button");
   const sidebar = document.getElementById("sidebar");
@@ -6,14 +9,17 @@ const question1 = () => {
     sidebarButton.addEventListener("click", () => {
       sidebar.classList.toggle("opened");
       if (sidebar.classList.contains("opened")) {
-        sidebarButton.textContent = "‹";
+        sidebarButton.textContent = "â€¹";
       } else {
-        sidebarButton.textContent = "›";
+        sidebarButton.textContent = "â€º";
       }
     });
   }
 };
 
+/**
+ * Question 2: TODO List
+ */
 const question2 = () => {
   const addTodoButton = document.getElementById("add-todo");
   const taskNameInput = document.getElementById("task-name");
@@ -32,6 +38,9 @@ const question2 = () => {
   }
 };
 
+/**
+ * Question 3: Greeter
+ */
 const question3 = () => {
   const firstNameInput = document.getElementById("first-name");
   const lastNameInput = document.getElementById("last-name");
@@ -41,7 +50,7 @@ const question3 = () => {
     const firstName = firstNameInput ? firstNameInput.value : "";
     const lastName = lastNameInput ? lastNameInput.value : "";
     if (messageElement) {
-      messageElement.textContent = Hello ${firstName} ${lastName}!;
+      messageElement.textContent = `Hello ${firstName} ${lastName}!`;
     }
   };
 
