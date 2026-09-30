@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  // --- Question 1: Interactive Sidebar ---
+const question1 = () => {
   const sidebarButton = document.getElementById("sidebar-button");
   const sidebar = document.getElementById("sidebar");
 
@@ -13,8 +12,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   }
+};
 
-  // --- Question 2: TODO List ---
+const question2 = () => {
   const addTodoButton = document.getElementById("add-todo");
   const taskNameInput = document.getElementById("task-name");
   const todoList = document.getElementById("todo-list");
@@ -30,8 +30,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   }
+};
 
-  // --- Question 3: Greeter ---
+const question3 = () => {
   const firstNameInput = document.getElementById("first-name");
   const lastNameInput = document.getElementById("last-name");
   const messageElement = document.getElementById("message");
@@ -50,4 +51,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   if (lastNameInput) {
     lastNameInput.addEventListener("input", updateGreeting);
   }
+};
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  question1();
+  question2();
+  question3();
 });
